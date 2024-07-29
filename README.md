@@ -17,7 +17,6 @@ openssl rsa -in privatekey.pem -outform PEM -pubout -out publickey.pem
 
 ```sh
 mkdir -p df-data
-cp df_game_r df-data
 cp publickey.pem df-data
 cp Script.pvf df-data
 ```
