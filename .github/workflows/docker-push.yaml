@@ -14,6 +14,8 @@ jobs:
       -
         name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
       -
         name: unzip
         run: unzip -P ${{ secrets.APP_PASSWORD }} app.zip
